@@ -71,9 +71,12 @@ if (featuresSection) {
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
-    if (hero) {
+    // Отключаем параллакс на мобильных
+    if (hero && window.innerWidth > 900) {
         const rate = scrolled * -0.5;
         hero.style.transform = `translateY(${rate}px)`;
+    } else if (hero) {
+        hero.style.transform = 'none';
     }
 });
 

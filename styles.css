@@ -653,6 +653,13 @@ body {
     color: #bfc9d1;
     margin-top: 8px;
 }
+.footer-extra {
+    font-size: 0.98rem;
+    color: #bfc9d1;
+    margin-top: 8px;
+    text-align: center;
+    line-height: 1.4;
+}
 @media (max-width: 600px) {
     .footer {
         padding: 22px 0 12px 0;
@@ -669,6 +676,10 @@ body {
     }
     .footer-copyright {
         font-size: 0.92rem;
+    }
+    .footer-extra {
+        font-size: 0.92rem;
+        margin-top: 6px;
     }
 }
 
