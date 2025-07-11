@@ -309,3 +309,27 @@ faqQuestions.forEach(btn => {
         if (!isOpen) item.classList.add('open');
     });
 }); 
+
+// --- Интеграция с Telegram Web Apps API ---
+window.addEventListener('DOMContentLoaded', function() {
+    if (window.Telegram && window.Telegram.WebApp) {
+        const tg = window.Telegram.WebApp;
+        tg.ready(); // Сообщаем Telegram, что WebApp готов
+
+        // Получаем данные пользователя
+        if (tg.initDataUnsafe && tg.initDataUnsafe.user) {
+            const user = tg.initDataUnsafe.user;
+            console.log('Telegram user_id:', user.id);
+            console.log('Имя:', user.first_name, 'Фамилия:', user.last_name, 'Username:', user.username);
+            // Если есть элемент для приветствия — выводим имя
+            const greet = document.getElementById('greeting');
+            if (greet) {
+                greet.textContent = `Привет, ${user.first_name || 'друг'}!`;
+            }
+        } else {
+            console.log('Нет данных пользователя Telegram (Mini App не через Telegram?)');
+        }
+    } else {
+        console.log('Telegram WebApp API недоступен');
+    }
+}); 
