@@ -1151,3 +1151,32 @@ body {
     gap: 10px;
   }
 } 
+
+/* --- Юридические списки: выравнивание и отступы --- */
+.offer-content ol, .privacy-content ol, .terms-content ol, .consent-content ol {
+    padding-left: 22px;
+    margin-left: 0;
+    list-style-position: inside;
+}
+.offer-content li, .privacy-content li, .terms-content li, .consent-content li {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
+    list-style-position: inside;
+}
+.offer-content ol > li, .privacy-content ol > li, .terms-content ol > li, .consent-content ol > li {
+    margin-bottom: 8px;
+}
+.offer-content ul, .privacy-content ul, .terms-content ul, .consent-content ul {
+    padding-left: 20px;
+    margin-left: 0;
+    list-style-position: inside;
+}
+.offer-content ul > li, .privacy-content ul > li, .terms-content ul > li, .consent-content ul > li {
+    margin-bottom: 6px;
+}
+.offer-content ol ul, .privacy-content ol ul, .terms-content ol ul, .consent-content ol ul {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding-left: 18px;
+} 
