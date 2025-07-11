@@ -33,6 +33,7 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
+    transition: transform 0.45s cubic-bezier(.77,0,.18,1);
 }
 
 .hero::before {
