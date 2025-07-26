@@ -1218,3 +1218,16 @@ body {
 .payment-result .cta-button:hover {
   background: linear-gradient(45deg, #d35400, #e59866);
 }
+
+.payment-result .container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+}
+
+.payment-result h1 {
+  text-align: center;
+}
