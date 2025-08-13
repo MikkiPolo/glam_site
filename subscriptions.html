@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Подписка</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .subscriptions-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .subscription-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      max-width: 320px;
+      flex: 1 1 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .subscription-card h3 {
+      font-size: 1.5rem;
+      color: #a05565;
+      margin-bottom: 16px;
+    }
+
+    .subscription-card p {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .subscription-card .price {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 24px;
+    }
+
+    .subscription-card .cta-button {
+      font-size: 1rem;
+      padding: 12px 24px;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #a05565, #d07b8d);
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .subscription-card .cta-button:hover {
+      background: linear-gradient(90deg, #8b4454, #c36b7f);
+    }
+
+    .footer {
+      background-color: #2f3a45;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="back-link-container">
+    <a href="index.html" class="back-link">
+      ← Вернуться на главную
+    </a>
+  </div>
+
+  <div class="support-content">
+    <h1>Выбери свою подписку</h1>
+    <div class="subscriptions-grid">
+      <div class="subscription-card">
+        <div>
+          <h3>Ежемесячная</h3>
+          <p>
+            Персональный AI-стилист<br>
+            Общение 24/7 в Telegram<br>
+            Работа с гардеробом<br>
+            Анализ цветотипа и фигуры<br>
+            Генерация 50 изображений в месяц<br>
+            Поиск вещей в интернете
+          </p>
+          <div class="price">
+            <span style="font-size: 1.2em; color: #a05565;">4 990 ₽ / месяц</span>
+          </div>
+          <a href="https://t.me/linapolo2bot" target="_blank" class="cta-button">Подключить</a>
+        </div>
+      </div>
+
+      <div class="subscription-card">
+        <div>
+          <h3>Три месяца</h3>
+          <p>
+            Всё из ежемесячной подписки<br>
+            Доступ сразу на 90 дней<br>
+            Больше функций — меньше затрат
+          </p>
+          <div class="price">
+            <span style="text-decoration: line-through; color: #999; font-size: 0.9em;">14 970 ₽</span>
+            <br>
+            <strong style="font-size: 1.4em; color: #a05565;">9 990 ₽</strong>
+            <div style="font-size: 0.9em; color: #555;">Выгода 34%</div>
+          </div>
+          <a href="https://t.me/linapolo2bot" target="_blank" class="cta-button">Подключить</a>
+        </div>
+      </div>
+
+      <div class="subscription-card">
+        <div>
+          <h3>VIP</h3>
+          <p>
+            Всё из трёхмесячной подписки<br>
+            + Личная консультация от Лины Поло<br>
+            + Персональная настройка бота<br>
+            + Приоритетная поддержка
+          </p>
+          <div class="price">
+            <strong style="font-size: 1.2em; color: #a05565;">24 990 ₽</strong>
+            <div style="font-size: 0.9em; color: #555;">затем 9 990 ₽ / 3 мес.</div>
+          </div>
+          <a href="https://t.me/linapolo2bot" target="_blank" class="cta-button">Подключить</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-social">
+      <a href="https://www.instagram.com/lina_polo_/" target="_blank" class="social-link">
+        <i class="fab fa-instagram"></i>
+        lina_polo_
+      </a>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Главная</a>
+      <a href="privacy.html">Политика конфиденциальности</a>
+      <a href="terms.html">Пользовательское соглашение</a>
+      <a href="offer.html">Публичная оферта</a>
+      <a href="consent.html">Согласие на обработку персональных данных</a>
+      <a href="support.html">Поддержка</a>
+      <a href="subscriptions.html">Подписка</a>
+    </div>
+    <div class="footer-extra">
+      Самозанятая Половникова Лина Султановна ИНН 550901562804
+    </div>
+    <div class="footer-copyright">
+      © 2025 Lina Polo
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
